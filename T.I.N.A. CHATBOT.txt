@@ -6,8 +6,8 @@
 6 PRINT "                                   DEVELOPED BY"
 7 PRINT ""
 9 PRINT "                         MATTEO TREVISAN AKA TOOLKITMAN":PRINT "--------------------------------------------------------------------------------": FOR I = 1 TO 5000: NEXT I: HOME: SPEED = 150
-10 PRINT "": PRINT "TINA READY TO CHAT...": PRINT "--------------------------------------------------------------------------------": PRINT "TYPE YOUR NAME PLEASE": INPUT A$
-11 J = INT (100 * RND(1))+1
+10 PRINT "": PRINT "TINA READY TO CHAT...": PRINT "--------------------------------------------------------------------------------": PRINT "TYPE YOUR NAME PLEASE": INPUT A$:GOTO 333
+11 J = INT (100 * RND(1))+1:
 20 B$ = "TINA>": IF J = 1 THEN PRINT B$; "ARE YOU OK?": PRINT A$: INPUT ">"; F$: GOTO 135
 21 B$ = "TINA>": IF J = 2 THEN PRINT B$; "ARE ELECTION NEXT YEAR?": PRINT A$: INPUT ">"; F$: GOTO 137
 22 B$ = "TINA>": IF J = 3 THEN PRINT B$; "DO YOU 3D PRINT?": PRINT A$: INPUT ">"; F$: GOTO 139
@@ -305,3 +305,14 @@
 330 IF F$ <> "YES" THEN PRINT "TINA>I THOUGHT SO": GOTO 11
 331 IF F$ = "YES" THEN PRINT "TINA>THANK YOU!": GOTO 11
 332 IF F$ <> "YES" THEN PRINT "TINA>OK,I WILL FIND A SOLUTION BY MYSELF!": GOTO 11
+333 GR
+334 COLOR = 8
+335 HLIN 5,27 AT 8
+336 VLIN 5,27 AT 6
+337 HLIN 5,27 AT 23
+338 VLIN 27,5 AT 26
+339 COLOR = 12
+340 PLOT 7,10
+341 PLOT 16,22
+342 PLOT 25,10 : GOTO 11
+
